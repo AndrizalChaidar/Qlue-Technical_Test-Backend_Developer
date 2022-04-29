@@ -1,0 +1,15 @@
+1. 
+SELECT p.name, SUM(t.total * cast(i.price AS integer)) as total_price FROM transactions t
+JOIN items i on t.item_id = i.id 
+JOIN persons p on t.person_id = p.id 
+GROUP BY p.name;
+
+2.
+SELECT SUM(t.total * cast(i.price AS integer)) as "Total", TO_CHAR(t.date, 'Month') AS "Month", TO_CHAR(t.date, 'YYYY') AS "Year" FROM transactions t
+JOIN items i on t.item_id = i.id 
+GROUP BY t.date;
+
+3.
+SELECT p.name FROM persons p
+JOIN transactions t ON t.person_id = p.id 
+ORDER BY t.total DESC;

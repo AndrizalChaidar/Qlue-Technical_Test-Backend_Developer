@@ -1,0 +1,5 @@
+Concurrency is a state where there are task running at the same time interval and can be achieved by one core.
+The analogy of concurrency in one core is like there are two cars running on one lane one way road. That cars is progressing to their destination at the same time interval, but the latter car cannot overtake the car in front of him so the latter car must be waiting the car in front to progress further.
+
+Parallel is state of concurrency with multiple core.
+Based on analogy before, with parallel the road changed to two lane one way road with each lane is assigned to each car exclusively. With parallel that two cars can get to destination more efficient.
